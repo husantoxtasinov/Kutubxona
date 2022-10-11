@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <br>
+    <hr>
+    <h1>Universitetdagi fanlar:</h1>
+    <form method="get" action="/7Darsfanlar7/">
+        <input type="text" name="fan" id="fan">
+        <button type="submit">Searching</button>
+    </form>
+    <hr>
+    <br>
+    {% for fan in fanlar %}
+        <h3>{{fan.id}}. {{fan}}</h3>
+    {% endfor %}
+</body>
+</html>

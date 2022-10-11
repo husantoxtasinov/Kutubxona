@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <br>
+    <hr>
+    <h1>Kitob soni 10 tadan kam bo’lgan mualliflar</h1>
+    <hr>
+    <br>
+    {% for kitob in kkitoblar %}
+        <h3>{{ kitob.nom }}</h3>
+    {% endfor %}
+</body>
+</html>

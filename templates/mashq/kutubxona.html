@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talabalar</title>
+</head>
+<body>
+    <br>
+    <br>
+    <hr>
+    <h1>Kitoblar royhati</h1>
+    <br>
+    <br>
+    <br>
+    {% for kitob in kitoblar %}
+    <h2 style="display:inline;">{{kitob.id}}. <a href="/kitoblar/{{kitob.id}}/">{{kitob}} </a></h2>
+    <a href="/kitob_ochir/{{kitob.id}}/"><button>O'chirish</button></a><br><br><br>
+    {% endfor %}
+
+
+
+
+</body>
+</html>

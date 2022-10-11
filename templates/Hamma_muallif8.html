@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muallifflar</title>
+</head>
+<body>
+    <br>
+    <hr>
+   <h1>Mualliflar:</h1>
+    {% for muallif in hammasi %}
+        <h3>{{muallif.id}}. <a href="/muallif/{{muallif.id}}/">{{muallif}}</a></h3>
+    {% endfor %}
+</body>
+</html>

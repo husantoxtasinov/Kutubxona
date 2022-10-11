@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Katta kitoblar</title>
+</head>
+<body>
+    {% for kitob in katta %}
+    <h2>{{kitob.id}}. <a href="/kitob/{{kitob.id}}/">{{kitob}}</a></h2>
+
+    {% endfor %}
+</body>
+</html>

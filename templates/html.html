@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+<br>
+     <hr>
+    <h1>Mualliflar ro'yhati:</h1>
+    <hr>
+    <br>
+    {% for muallif in mualliflar %}
+        <h3 style="display:inline-block; margin-right:20px">{{muallif.id}} {{muallif}} </h3>
+    <a href="/muallif_ochir/{{muallif.id}}"><button type="submit">Delete</button></a>
+    <br>
+    <br>
+    {% endfor %}
+
+</body>
+</html>

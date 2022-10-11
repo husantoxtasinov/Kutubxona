@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <br>
+  <hr>
+  <h1>Ustozlar ro'yhati:</h1>
+  <form action="/ustozl8/" method="get">
+      <input type="text" name="soz" id="ustoz" placeholder="Ustozlar...">
+      <button type="submit">Searching</button>
+  </form>
+  <hr>
+  <br>
+  {% for ustoz in ustozlar %}
+      <h3>{{ustoz.id}}. {{ustoz}}</h3>
+  {% endfor %}
+</body>
+</html>
